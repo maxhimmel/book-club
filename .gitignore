@@ -11,6 +11,9 @@ build/
 # turborepo
 .turbo/
 
+# convex local deployment data
+.convex/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
