@@ -36,6 +36,8 @@ Then follow **[SETUP.md](./SETUP.md)** to connect your own Convex project and Wo
 pnpm dev          # runs Convex watcher + Next.js together via Turbo
 ```
 
+To ship it, see **[DEPLOY.md](./DEPLOY.md)** (Vercel + Convex production).
+
 ## Scripts (root)
 
 | Command          | What it does                                   |
