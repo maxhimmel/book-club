@@ -1,0 +1,22 @@
+{
+  "name": "book-club",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.8.1",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "backend:setup": "pnpm --filter @book-club/backend run setup",
+    "sync-web-env": "node scripts/sync-web-env.mjs",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,mjs,json,md,css}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mjs,json,md,css}\"",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "turbo": "^2.3.3"
+  }
+}
