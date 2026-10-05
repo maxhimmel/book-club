@@ -1,0 +1,17 @@
+{
+  "name": "@book-club/backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "convex dev",
+    "setup": "convex dev --until-success",
+    "typecheck": "if [ -d convex ]; then tsc --noEmit -p convex; else echo 'convex/ not initialized yet — run: pnpm backend:setup'; fi",
+    "lint": "echo 'no lint configured for backend' && exit 0"
+  },
+  "dependencies": {
+    "convex": "^1.17.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
